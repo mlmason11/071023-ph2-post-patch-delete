@@ -1,0 +1,76 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Lola",
+      "species": "Red Panda",
+      "endangered": true
+    },
+    {
+      "id": 2,
+      "name": "Michael",
+      "species": "Malayan Sun Bear",
+      "endangered": true
+    },
+    {
+      "id": 3,
+      "name": "Simba",
+      "species": "Lion",
+      "endangered": false
+    },
+    {
+      "name": "Bob",
+      "species": "raccoon",
+      "endangered": true,
+      "id": 4
+    },
+    {
+      "name": "Curious George",
+      "species": "macaque",
+      "endangered": false,
+      "id": 5
+    },
+    {
+      "name": "Perry",
+      "species": "platypus",
+      "endangered": false,
+      "id": 6
+    },
+    {
+      "name": "Peppa",
+      "species": "pig",
+      "endangered": false,
+      "id": 7
+    },
+    {
+      "name": "Okja",
+      "species": "superpig",
+      "endangered": false,
+      "id": 8
+    },
+    {
+      "name": "Okja",
+      "species": "superpig",
+      "endangered": true,
+      "id": 9
+    },
+    {
+      "name": "Jerry",
+      "species": "alien",
+      "endangered": true,
+      "id": 10
+    },
+    {
+      "name": "bob",
+      "species": "raccoon",
+      "endangered": false,
+      "id": 11
+    },
+    {
+      "name": "bob",
+      "species": "raccoon",
+      "endangered": false,
+      "id": 12
+    }
+  ]
+}
