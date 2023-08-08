@@ -19,9 +19,7 @@ to start your json-server. In a seperate terminal run `npm start`.
 In React we'll often be manipulating arrays through state management. There are
 many ways to achieve full CRUD but we need to remember one golden rule:
 
-```
-NEVER MUTATE STATE DIRECTLY
-```
+**NEVER MUTATE STATE DIRECTLY**
 
 This is to say, never directly change an array, always create a copy and
 manipulate the copy!
