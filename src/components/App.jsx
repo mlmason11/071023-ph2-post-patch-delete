@@ -9,13 +9,3 @@ function App() {
 }
 
 export default App;
-
-// GO OVER EVERYTHING ON THE CC
-
-// PROPS
-// STATE
-// USEEFFECT AND FETCH
-// MAP
-// FILTER
-// TOGGLE / CONDITIONAL RENDERING
-// FORMS AND POST

@@ -4,12 +4,13 @@ import AnimalForm from './AnimalForm'
 
 function AnimalCollection() {
 
-    // --- STATE --- //
+
+    // STATE //
 
     const [animals, setAnimals] = useState([])
-    const [filterEndangered, setFilterEndangered] = useState(false)
 
-    // --- FETCH / USEEFFECT --- //
+
+    // EFFECTS //
 
     useEffect(() => {
         fetch('http://localhost:3000/animals')
@@ -17,28 +18,20 @@ function AnimalCollection() {
         .then( fetchedData => setAnimals(fetchedData) )
     }, [])
 
-    // --- CALLBACK FUNCTIONS --- //
 
-    function addAnimal( newAnimal ) {
-        setAnimals( [ ...animals, newAnimal ] )
-    }
+    // CALLBACK FUNCTIONS //
 
-    function toggleFilterEndangered() {
-        setFilterEndangered( !filterEndangered )
-    }
+    /* We'll add some callback functions here */
 
-    // --- RENDER --- //
 
-    const filteredAnimals = filterEndangered ? animals.filter(animal => animal.endangered) : animals
+    // RENDER //
 
     return (
         <div>
 
-            <button onClick={ toggleFilterEndangered }>Show { filterEndangered ? "All" : "Endangered" }</button>
+            <AnimalForm />
 
-            <AnimalForm addAnimal={addAnimal} />
-
-            { filteredAnimals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
+            { animals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
 
         </div>
     )
