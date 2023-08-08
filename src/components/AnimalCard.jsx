@@ -41,7 +41,6 @@ function AnimalCard({ animal, editAnimal, releaseAnimal }) {
                 checked={animal.endangered}
                 onChange={ handleChangeEndangered } />
             </p>
-
             <button onClick={ handleRelease }>Release to the Wild</button>
 
         </div>
