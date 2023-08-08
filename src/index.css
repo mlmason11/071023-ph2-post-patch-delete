@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+}
+
+.animal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animal-card {
+  background-color: lightgrey;
+  border-radius: 15px;
+  color: black;
+  margin: 1em;
+  padding: 0.5em;
+  min-width: 20em;
+}
+
+.animal-form {
+  background-color: lightgrey;
+  padding: 1em;
+  border-radius: 0 0 20px 20px;
+}
+
+.animal-form input {
+  margin-right: 1em;
+  margin-left: 0.5em;
+}

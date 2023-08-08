@@ -37,7 +37,9 @@ function AnimalForm() {
     // RENDER //
 
     return (
-        <form onSubmit={ handleSubmitAnimal }>
+        <form className="animal-form" onSubmit={ handleSubmitAnimal }>
+
+            <h2>Add New Animal</h2>
 
             <label htmlFor="name">Name:</label>
             <input type="text" name="name" onChange={ handleChangeName } value={name} />

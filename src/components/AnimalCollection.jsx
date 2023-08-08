@@ -27,13 +27,17 @@ function AnimalCollection() {
     // RENDER //
 
     return (
-        <div>
-
+        <>
             <AnimalForm />
 
-            { animals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
+            <h2>Our Zoo Animals</h2>
 
-        </div>
+            <div className="animal-container">
+
+                { animals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
+
+            </div>
+        </>
     )
 }
 

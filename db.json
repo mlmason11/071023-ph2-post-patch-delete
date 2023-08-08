@@ -45,12 +45,6 @@
     {
       "name": "Okja",
       "species": "superpig",
-      "endangered": false,
-      "id": 8
-    },
-    {
-      "name": "Okja",
-      "species": "superpig",
       "endangered": true,
       "id": 9
     },
@@ -59,18 +53,6 @@
       "species": "alien",
       "endangered": true,
       "id": 10
-    },
-    {
-      "name": "bob",
-      "species": "raccoon",
-      "endangered": false,
-      "id": 11
-    },
-    {
-      "name": "bob",
-      "species": "raccoon",
-      "endangered": false,
-      "id": 12
     }
   ]
 }
