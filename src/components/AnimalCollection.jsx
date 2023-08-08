@@ -15,26 +15,37 @@ function AnimalCollection() {
     useEffect(() => {
         fetch('http://localhost:3000/animals')
         .then( response => response.json() )
-        .then( fetchedData => setAnimals(fetchedData) )
+        .then( fetchedAnimals => setAnimals(fetchedAnimals) )
     }, [])
 
 
     // CALLBACK FUNCTIONS //
 
-    /* We'll add some callback functions here */
+    function addAnimal( newAnimal ) {
+        setAnimals([...animals, newAnimal])
+    }
 
+    function editAnimal( editedAnimal ) {
+        const newAnimals = animals.map( animal => animal.id === editedAnimal.id ? editedAnimal : animal )
+        setAnimals( newAnimals )
+    }
+
+    function releaseAnimal( deletedAnimal ) {
+        const filteredAnimals = animals.filter( animal => animal.id !== deletedAnimal.id )
+        setAnimals( filteredAnimals )
+    }
 
     // RENDER //
 
     return (
         <>
-            <AnimalForm />
+            <AnimalForm addAnimal={addAnimal} />
 
             <h2>Our Zoo Animals</h2>
 
             <div className="animal-container">
 
-                { animals.map(animal => <AnimalCard key={animal.id} animal={animal} />) }
+                { animals.map(animal => <AnimalCard key={animal.id} animal={animal} editAnimal={editAnimal} releaseAnimal={releaseAnimal} />) }
 
             </div>
         </>

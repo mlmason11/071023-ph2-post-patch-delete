@@ -53,6 +53,12 @@
       "species": "alien",
       "endangered": true,
       "id": 10
+    },
+    {
+      "name": "beelzebub",
+      "species": "angel of death",
+      "endangered": true,
+      "id": 11
     }
   ]
 }
